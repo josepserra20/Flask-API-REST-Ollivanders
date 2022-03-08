@@ -1,7 +1,6 @@
-from flask_restful import Resource
+from flask import render_template
 
-class Index(Resource):
-    def get(self):
-        return {'hello': 'index'}
+class Index:
 
-
+    def get():
+        return render_template('index.html')
