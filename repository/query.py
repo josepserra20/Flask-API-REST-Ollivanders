@@ -1,12 +1,24 @@
-from flask import g
 from repository.connect import db
+from mongoengine import * 
+from repository.model import Ollivanders
 
 class query:
 
     def get_stock():
-        conexion = db.getBbdd()
-        return list(conexion.find({}, {"_id": False }))
+        db.getBbdd()
+        return Ollivanders.objects()
+        
 
-    def getStockByName(name):
-        conexion = db.getBbdd()
-        return list(conexion.find({"name":name}, {"_id" : False}))
+    def getStockByName(nametofind):
+        db.getBbdd()
+        return Ollivanders.objects(name=nametofind)
+        
+            
+    def DeleteByName(nameToDelete):
+        db.getBbdd()
+        return Ollivanders.objects(name=nameToDelete)
+        
+
+
+
+    
