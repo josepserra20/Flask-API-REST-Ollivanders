@@ -31,17 +31,17 @@
           <th>quality</th>
           <th>Sell_in</th>
         </tr>
-        <tr>
-    {%block body %}
+        {%block body %}
         {% for item in lista %}
         <!-- <tr>{{item}}</tr> -->
         
+        <tr>
         <td>{{item.name}}</td>
         <td>{{item.quality}}</td>
         <td>{{item.sell_in}}</td>
+        </tr>
         {%endfor%}
-    {% endblock %}
-</tr>
+        {% endblock %}
     </table>
 </body>
 </html>
