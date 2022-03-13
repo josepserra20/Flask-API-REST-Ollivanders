@@ -12,9 +12,10 @@ class db():
         #             ["Backstage passes to a TAFKAL80ETC concert", 15, 20],
         #             ["Backstage passes to a TAFKAL80ETC concert", 10, 49],
         #             ["Backstage passes to a TAFKAL80ETC concert", 5, 49]]
-    
-        conexion = connect(host="mongodb+srv://m001-student:m001-mongodb-basics@cluster0.fdyqp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+
+        conexion = connect(host="mongodb+srv://m001-student:m001-mongodb-basics@cluster0.fdyqp.mongodb.net/ollivanders")
         return conexion["ollivanders"]["ollivanders"]
+
 
 
 
