@@ -7,5 +7,6 @@ items.json
 pytest.ini
 tox.ini
 README.md
-test
+tests
+Factory.py
 .pytest_cache
