@@ -8,16 +8,17 @@ class query:
         db.getBbdd()
         return Ollivanders.objects()
         
-
     def getStockByName(nametofind):
         db.getBbdd()
         return Ollivanders.objects(name=nametofind)
         
-            
     def DeleteByName(nameToDelete):
         db.getBbdd()
         return Ollivanders.objects(name=nameToDelete)
-        
+    
+    def getStockByNameFirst(nametofind):
+        db.getBbdd()
+        return Ollivanders.objects(name=nametofind)[0]
 
 
 

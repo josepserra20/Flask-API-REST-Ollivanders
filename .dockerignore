@@ -1,0 +1,12 @@
+venv
+.dockerignore
+__pycache__
+.gitignore
+dev-requierements.in
+items.json
+pytest.ini
+tox.ini
+README.md
+tests
+Factory.py
+.pytest_cache
